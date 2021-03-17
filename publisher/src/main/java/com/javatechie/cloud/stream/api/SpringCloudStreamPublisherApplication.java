@@ -19,9 +19,9 @@ public class SpringCloudStreamPublisherApplication {
     private MessageChannel output;
 
     @PostMapping("/publish")
-    public TasaGobierno publishEvent(@RequestBody TasaGobierno tasaGobierno) {
-        output.send(MessageBuilder.withPayload(tasaGobierno).build());
-        return tasaGobierno;
+    public TasaPublisher publishEvent(@RequestBody TasaPublisher tasaPublisher) {
+        output.send(MessageBuilder.withPayload(tasaPublisher).build());
+        return tasaPublisher;
     }
 
     public static void main(String[] args) {

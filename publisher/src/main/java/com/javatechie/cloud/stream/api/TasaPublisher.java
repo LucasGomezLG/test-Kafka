@@ -10,12 +10,18 @@ import java.util.Date;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class TasaGobierno {
+public class TasaPublisher {
 
-    private Date fecha_desde;
-    private Date fecha_hasta;
-    private int nro_cuotas;
-    private BigDecimal tasa;
-    private int tipo_tasa;
+    private String originDate;
+
+    private String estNumber;
+
+    private String emitterBank;
+
+    private String appliedRate;
+
+    private String numPayments;
+
+    private String amexPromo;
 
 }
